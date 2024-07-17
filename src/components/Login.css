@@ -1,0 +1,150 @@
+/* Base styles */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh; /* Increased height of main container */
+    background-color: #f0f0f0; /* Light grey background color */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .login-content {
+    display: flex;
+    width: 800px; /* Fixed width */
+    max-width: 100%; /* Ensure it doesn't exceed the viewport width */
+    height: 550px; /* Increased height for consistency */
+    padding: 20px;
+    background-color: #f0f0f0; /* Matched to the image background */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft box shadow */
+    text-align: center;
+  }
+  
+  .login-image {
+    width: 400px; /* Fixed width for the image */
+    height: 160%; /* Match height of login-content */
+    max-height: 540px; /* Increased max-height for the image */
+    background-image: url('../../public/hello1.avif'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+  
+  .login-forms {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .login-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .slogan {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .create-user-form,
+  .login-section {
+    margin-top: 20px;
+  }
+  
+  .create-user-form h2,
+  .login-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .create-user-form button,
+  .login-section button {
+    font-weight: 600;
+    padding: 10px 20px;
+    margin-top: 10px;
+  }
+  
+  input[type='text'],
+  button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  button.create-button {
+    background-color: #28a745; /* Green color for Create button */
+    color: #fff;
+  }
+  
+  button.create-button:hover {
+    background-color: #218838; /* Darker green on hover */
+  }
+  
+  button.login-button {
+    background-color: #007bff; /* Blue color for Login button */
+    color: #fff;
+  }
+  
+  button.login-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .toggle-buttons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .error {
+    color: #dc3545; /* Error message color */
+    font-size: 1.3rem;
+    margin-top: 10px;
+    font-weight: 20px;
+  }
+  
+  /* Media queries for responsiveness */
+  @media screen and (max-width: 1024px) {
+    .login-content {
+      width: 90%; /* Adjust width for smaller screens */
+      height: auto; /* Allow content to dictate height */
+      flex-direction: column; /* Stack content vertically */
+    }
+  
+    .login-image {
+      width: 100%; /* Full width for smaller screens */
+      height: 300px; /* Fixed height for image */
+      border-radius: 8px 8px 0 0; /* Adjust border radius for top corners */
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .login-content {
+      padding: 10px; /* Adjust padding for smaller screens */
+    }
+  
+    .login-forms {
+      padding: 10px; /* Adjust padding for smaller screens */
+    }
+  
+    .login-content h1 {
+      font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+  
+    .slogan {
+      font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+  }
+  
